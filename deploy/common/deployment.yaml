@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: discord-gcpai-bot
+  labels:
+    app: discord-gcpai-bot
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: discord-gcpai-bot
+  template:
+    metadata:
+     labels:
+      name: discord-gcpai-bot
+      app: discord-gcpai-bot
+    spec:
+      serviceAccountName: discordbot-sa
+      restartPolicy: Always
+      containers:
+        - image: us-central1-docker.pkg.dev/gcp-prj-123/discord/discord-gcpai-bot-app
+          name: discord-gcpai-bot
+          envFrom:
+            - configMapRef:
+                name: discord-gcpai-bot-config
+          resources:
+            requests:
+              memory: 512Mi
+              cpu: 500m

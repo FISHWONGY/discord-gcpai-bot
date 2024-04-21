@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: discord-gcpai-bot-config
+data:
+  GCP_PROJECT_ID: "gcp-prj-123"
+  ENV: "prod"

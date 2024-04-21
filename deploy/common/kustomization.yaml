@@ -1,0 +1,5 @@
+namespace: automations
+resources:
+  - deployment.yaml
+  - config.yaml
+  - serviceaccount.yaml

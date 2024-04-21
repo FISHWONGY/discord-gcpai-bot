@@ -1,0 +1,20 @@
+apiVersion: skaffold/v2beta28
+kind: Config
+metadata:
+  name: discordbot
+build:
+  artifacts:
+  - image: us-central1-docker.pkg.dev/gcp-prj-123/discord/discord-gcpai-bot-app
+    docker:
+      dockerfile: Dockerfile
+deploy:
+  kubeContext: gke_gcp-prj-123_us-central1_autopilot-cluster-1
+  kustomize:
+    paths:
+    - deploy/common
+profiles:
+- name: production
+  deploy:
+    kustomize:
+      paths:
+      - deploy/production
