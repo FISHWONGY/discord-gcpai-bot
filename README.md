@@ -10,8 +10,7 @@ Gemini AI assistant w/ Discord integration
 This project is a Discord Chatbot that uses various LLM model frpm Google to provide automated responses. It was developed in Python and uses the Vertex API and Discord API for chat operations.
 
 ## ✨ Demo
-![demo](https://github.com/FISHWONGY/discord-gcpai-bot/assets/59711659/a2a57e9b-7695-4a29-b0dd-4e40b298a570)
-
+![dc-demo](https://github.com/FISHWONGY/discord-gcpai-bot/assets/59711659/0e928194-e2b3-4cc2-a1c8-6528f7d9ca0c)
 
 
 
@@ -55,8 +54,7 @@ Discord is a collaboration platform that can be used as a messsaging tool. This 
 ```
 
 ## 💡 Software Architecture
-![RAG](https://github.com/FISHWONGY/discord-gcpai-bot/assets/59711659/0336882b-da94-4370-a3fc-2182379524a2)
-
+![dc-architecture](https://github.com/FISHWONGY/discord-gcpai-bot/assets/59711659/111dcbd6-2202-4fc4-9938-47949517a3c0)
 
 ## 🚀 Installation
 1. ```git clone https://github.com/FISHWONGY/discord-gcpai-bot/```
@@ -70,7 +68,8 @@ Discord is a collaboration platform that can be used as a messsaging tool. This 
 
 ## 😎 Getting Started
 Just type `/help` to ge started</br></br>
-![slash-help](https://github.com/FISHWONGY/discord-gcpai-bot/assets/59711659/ba58adac-bc51-4be0-b2c3-b0ba34762768)
+
+![dc-help](https://github.com/FISHWONGY/discord-gcpai-bot/assets/59711659/103ad5a6-0ec2-4038-a4c7-babf7c666bdf)
 
 
  ## ✨ Features
